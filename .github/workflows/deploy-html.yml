@@ -10,3 +10,7 @@ jobs:
     uses: ./.github/workflows/deploy-reusable.yml
     with:
       source-dir: static-website-130525
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
