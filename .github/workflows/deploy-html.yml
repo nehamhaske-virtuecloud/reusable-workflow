@@ -9,7 +9,7 @@ jobs:
   deploy:
     uses: ./.github/workflows/deploy-reusable.yml
     with:
-      source-dir: 'public'
+      source-dir: ''
     secrets:
       AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
