@@ -7,6 +7,6 @@ on:
 
 jobs:
   deploy:
-    uses: ./.github/workflows/deploy-reusable.yml
+    uses: ./.github/workflows/reusable.yml
     with:
-      source-dir: ''
+      source-dir: static-website-130525
